@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37B7B97FD96F30C5E393DB97 /* Pods_Reto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AC3F3759E94F3F8FC233DF /* Pods_Reto.framework */; };
 		81675A6D1E18939700B19CE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81675A6C1E18939700B19CE1 /* AppDelegate.swift */; };
 		81675A6F1E18939700B19CE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81675A6E1E18939700B19CE1 /* ViewController.swift */; };
 		81675A721E18939700B19CE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81675A701E18939700B19CE1 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C1D941EAAD272A8A139908A /* Pods-Reto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reto/Pods-Reto.release.xcconfig"; sourceTree = "<group>"; };
 		81675A691E18939700B19CE1 /* Reto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81675A6C1E18939700B19CE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81675A6E1E18939700B19CE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		81675A731E18939700B19CE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81675A761E18939700B19CE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81675A781E18939700B19CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E83CDC3A535A3BC7C1CE417 /* Pods-Reto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reto/Pods-Reto.debug.xcconfig"; sourceTree = "<group>"; };
+		C7AC3F3759E94F3F8FC233DF /* Pods_Reto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B7B97FD96F30C5E393DB97 /* Pods_Reto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				81675A6B1E18939700B19CE1 /* Reto */,
 				81675A6A1E18939700B19CE1 /* Products */,
+				D77A83198E89B8BDDEF0C25A /* Pods */,
+				B359A1B3E7719C455B7BB600 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = Reto;
 			sourceTree = "<group>";
 		};
+		B359A1B3E7719C455B7BB600 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7AC3F3759E94F3F8FC233DF /* Pods_Reto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D77A83198E89B8BDDEF0C25A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E83CDC3A535A3BC7C1CE417 /* Pods-Reto.debug.xcconfig */,
+				6C1D941EAAD272A8A139908A /* Pods-Reto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81675A7B1E18939700B19CE1 /* Build configuration list for PBXNativeTarget "Reto" */;
 			buildPhases = (
+				A398E4ACC4FFA07E717E05DA /* [CP] Check Pods Manifest.lock */,
 				81675A651E18939700B19CE1 /* Sources */,
 				81675A661E18939700B19CE1 /* Frameworks */,
 				81675A671E18939700B19CE1 /* Resources */,
+				2158C4C53941BC9145C2EED7 /* [CP] Embed Pods Frameworks */,
+				CCA205DE9BE6BB27184B36EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2158C4C53941BC9145C2EED7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reto/Pods-Reto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A398E4ACC4FFA07E717E05DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CCA205DE9BE6BB27184B36EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reto/Pods-Reto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		81675A651E18939700B19CE1 /* Sources */ = {
@@ -257,12 +332,13 @@
 		};
 		81675A7C1E18939700B19CE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E83CDC3A535A3BC7C1CE417 /* Pods-Reto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 44T425V6AF;
 				INFOPLIST_FILE = Reto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.juancastrov.Reto;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juancastrov.reto-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -270,12 +346,13 @@
 		};
 		81675A7D1E18939700B19CE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C1D941EAAD272A8A139908A /* Pods-Reto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 44T425V6AF;
 				INFOPLIST_FILE = Reto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.juancastrov.Reto;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juancastrov.reto-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -300,6 +377,7 @@
 				81675A7D1E18939700B19CE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
